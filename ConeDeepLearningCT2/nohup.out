@@ -1,0 +1,843 @@
+/home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From /home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-12-21 00:38:52.284060: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-12-21 00:38:57.184944: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3c63e80 executing computations on platform CUDA. Devices:
+2019-12-21 00:38:57.184987: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-12-21 00:38:57.186975: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2596990000 Hz
+2019-12-21 00:38:57.187774: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3d3da00 executing computations on platform Host. Devices:
+2019-12-21 00:38:57.187801: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-12-21 00:38:57.187916: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: b4b7:00:00.0
+totalMemory: 11.17GiB freeMemory: 11.11GiB
+2019-12-21 00:38:57.187935: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-12-21 00:38:57.190159: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-12-21 00:38:57.190176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-12-21 00:38:57.190183: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-12-21 00:38:57.190249: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10869 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: b4b7:00:00.0, compute capability: 3.7)
+2019-12-21 00:38:57.766482: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-12-21 00:38:57.766539: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-12-21 00:38:57.766560: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-12-21 00:38:57.766568: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-12-21 00:38:57.766625: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10869 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: b4b7:00:00.0, compute capability: 3.7)
+Writing result to /home/davi/Documentos/train/
+Check if all projections have corresponding labels..
+
+
+
+Exibindo PA ***********
+[1.43989663 1.45857166 1.47724668 1.4959217  1.51459672 1.53327175
+ 1.55194677 1.57079633 1.58964588 1.60832091 1.62699593 1.64567095
+ 1.66434597 1.683021   1.70169602]
+
+
+
+
+
+
+
+
+Tamanho do parker: 
+(15, 1, 2048)
+
+WARNING: The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+If you depend on functionality not listed there, please file an issue.
+
+Start training model 0
+Leaving /home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary0.proj.bin for test purposes..
+Printando os sets
+['/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary1.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary10.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary11.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary12.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary13.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary14.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary15.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary16.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary17.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary18.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary19.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary2.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary20.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary21.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary22.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary23.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary24.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary25.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary26.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary27.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary28.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary29.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary3.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary30.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary31.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary32.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary33.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary34.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary35.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary36.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary37.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary38.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary39.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary4.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary40.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary41.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary42.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary43.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary44.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary45.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary46.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary47.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary48.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary49.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary5.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary50.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary51.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary52.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary53.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary54.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary55.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary56.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary57.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary58.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary59.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary6.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary60.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary61.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary62.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary63.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary64.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary65.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary66.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary67.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary68.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary69.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary7.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary70.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary71.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary72.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary73.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary74.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary75.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary76.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary77.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary78.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary79.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary8.proj.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary80.proj.bin']
+
+
+
+['/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary1.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary10.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary11.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary12.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary13.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary14.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary15.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary16.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary17.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary18.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary19.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary2.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary20.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary21.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary22.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary23.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary24.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary25.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary26.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary27.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary28.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary29.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary3.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary30.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary31.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary32.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary33.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary34.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary35.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary36.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary37.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary38.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary39.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary4.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary40.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary41.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary42.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary43.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary44.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary45.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary46.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary47.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary48.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary49.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary5.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary50.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary51.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary52.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary53.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary54.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary55.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary56.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary57.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary58.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary59.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary6.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary60.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary61.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary62.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary63.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary64.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary65.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary66.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary67.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary68.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary69.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary7.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary70.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary71.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary72.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary73.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary74.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary75.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary76.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary77.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary78.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary79.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary8.vol.bin', '/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary80.vol.bin']WARNING:tensorflow:From tfcone/pipeline.py:100: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/davi/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/davi/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING:tensorflow:From /home/davi/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/davi/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/davi/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:202: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/davi/Documentos/ConeDeepLearningCT2/tfcone/inout/dennerlein.py:16: WholeFileReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.map(tf.read_file)`.
+WARNING:tensorflow:From tfcone/pipeline.py:125: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
+WARNING:tensorflow:From tfcone/pipeline.py:671: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+
+
+
+
+['/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary0.proj.bin']
+
+
+
+['/home/davi/Documentos/ConeDeepLearningCT2/phantoms/lowdose/binary0.vol.bin']
+[1.43989663 1.45857166 1.47724668 1.4959217  1.51459672 1.53327175
+ 1.55194677 1.57079633 1.58964588 1.60832091 1.62699593 1.64567095
+ 1.66434597 1.683021   1.70169602]
+
+
+
+Exibindo PA ***********
+[1.43989663 1.45857166 1.47724668 1.4959217  1.51459672 1.53327175
+ 1.55194677 1.57079633 1.58964588 1.60832091 1.62699593 1.64567095
+ 1.66434597 1.683021   1.70169602]
+
+
+
+
+
+
+
+
+Tamanho do parker: 
+(15, 1, 2048)
+
+
+
+kkkkkkkkkkkkkkkkkk 
+<tf.Variable 'Variable:0' shape=(79,) dtype=string_ref>
+Tensor("strided_slice_2:0", shape=(15, 1792, 2048), dtype=float32, device=/device:CPU:0)
+
+
+
+Dimensão do training: 
+Tensor("strided_slice_2:0", shape=(15, 1792, 2048), dtype=float32, device=/device:CPU:0)
+
+
+
+
+
+
+
+**** PRIMEIR VAMOS VERIFICAR O TAMNAHO DA MULTIPLICÇÃO: *****
+Tensor("LAReconstructor_1/LAReconstructor/cosine-weighting:0", shape=(15, 1792, 2048), dtype=float32)
+<tf.Variable 'LAReconstructor/LAReconstructor/parker-weights:0' shape=(15, 1, 2048) dtype=float32_ref>
+
+
+
+
+******** O TENSOR DO MSE:
+Tensor("Abs:0", shape=(), dtype=float32)
+Tensor("strided_slice_3:0", shape=(1, 1792, 2048), dtype=float32, device=/device:CPU:0)
+Tensor("LAReconstructor_1:0", shape=(1, 1792, 2048), dtype=float32)
+
+
+
+**** PRIMEIR VAMOS VERIFICAR O TAMNAHO DA MULTIPLICÇÃO: *****
+Tensor("LAReconstructor_2/LAReconstructor/cosine-weighting:0", shape=(15, 1792, 2048), dtype=float32)
+<tf.Variable 'LAReconstructor/LAReconstructor/parker-weights:0' shape=(15, 1, 2048) dtype=float32_ref>
+
+
+
+
+Step 1; Loss: 0.000348
+0.00034818894
+Step 2; Loss: 0.000334
+0.00033403354
+Step 3; Loss: 0.000320
+0.000320029
+Step 4; Loss: 0.000306
+0.00030620483
+Step 5; Loss: 0.000293
+0.00029252516
+Step 6; Loss: 0.000279
+0.00027901438
+Step 7; Loss: 0.000266
+0.00026566503
+Step 8; Loss: 0.000252
+0.00025247928
+Step 9; Loss: 0.000239
+0.00023943427
+Step 10; Loss: 0.000220
+0.00021951499
+Step 11; Loss: 0.000207
+0.00020687356
+Step 12; Loss: 0.000194
+0.0001943838
+Step 13; Loss: 0.000182
+0.0001820551
+Step 14; Loss: 0.000170
+0.00016987747
+Step 15; Loss: 0.000158
+0.00015785781
+Step 16; Loss: 0.000146
+0.00014596329
+Step 17; Loss: 0.000134
+0.0001342355
+Step 18; Loss: 0.000123
+0.00012263874
+Step 19; Loss: 0.000111
+0.00011122952
+Step 20; Loss: 0.000100
+9.995251e-05
+Step 21; Loss: 0.000089
+8.882868e-05
+Step 22; Loss: 0.000078
+7.7839686e-05
+Step 23; Loss: 0.000067
+6.701887e-05
+Step 24; Loss: 0.000056
+5.6310284e-05
+Step 25; Loss: 0.000046
+4.5740402e-05
+Step 26; Loss: 0.000035
+3.5307723e-05
+Step 27; Loss: 0.000025
+2.5030164e-05
+Step 28; Loss: 0.000010
+9.84726e-06
+Step 29; Loss: 0.000000
+8.168776e-08
+Step 30; Loss: 0.000010
+9.807151e-06
+Step 31; Loss: 0.000020
+1.9817986e-05
+Step 32; Loss: 0.000010
+9.730253e-06
+Step 33; Loss: 0.000003
+3.1986879e-06
+Step 34; Loss: 0.000007
+6.6476473e-06
+Step 35; Loss: 0.000017
+1.662594e-05
+Step 36; Loss: 0.000007
+6.599173e-06
+Step 37; Loss: 0.000017
+1.6576909e-05
+Step 38; Loss: 0.000002
+1.8007239e-06
+Step 39; Loss: 0.000012
+1.1713166e-05
+Step 40; Loss: 0.000022
+2.1736543e-05
+Step 41; Loss: 0.000012
+1.1676327e-05
+Step 42; Loss: 0.000002
+1.7643922e-06
+Step 43; Loss: 0.000012
+1.1666788e-05
+Step 44; Loss: 0.000002
+1.6796204e-06
+Step 45; Loss: 0.000012
+1.1572111e-05
+Step 46; Loss: 0.000002
+1.6500572e-06
+Step 47; Loss: 0.000012
+1.1517723e-05
+Step 48; Loss: 0.000002
+1.5290898e-06
+Step 49; Loss: 0.000011
+1.1378225e-05
+Step 50; Loss: 0.000001
+1.4050066e-06
+Step 51; Loss: 0.000011
+1.1349151e-05
+Step 52; Loss: 0.000001
+1.4416186e-06
+Step 53; Loss: 0.000011
+1.1381185e-05
+Step 54; Loss: 0.000001
+1.4651965e-06
+Step 55; Loss: 0.000011
+1.1353419e-05
+Step 56; Loss: 0.000001
+1.4351157e-06
+Step 57; Loss: 0.000011
+1.1289229e-05
+Step 58; Loss: 0.000021
+2.1322086e-05
+Step 59; Loss: 0.000011
+1.1218739e-05
+Step 60; Loss: 0.000001
+1.2480175e-06
+Step 61; Loss: 0.000011
+1.1172794e-05
+Step 62; Loss: 0.000001
+1.1877071e-06
+Step 63; Loss: 0.000011
+1.1069981e-05
+Step 64; Loss: 0.000001
+1.1454856e-06
+Step 65; Loss: 0.000011
+1.1030172e-05
+Step 66; Loss: 0.000001
+1.0511695e-06
+Step 67; Loss: 0.000011
+1.094273e-05
+Step 68; Loss: 0.000001
+9.778248e-07
+Step 69; Loss: 0.000011
+1.0865649e-05
+Step 70; Loss: 0.000001
+9.0261716e-07
+Step 71; Loss: 0.000011
+1.0788435e-05
+Step 72; Loss: 0.000001
+8.402678e-07
+Step 73; Loss: 0.000011
+1.0735749e-05
+Step 74; Loss: 0.000004
+4.131544e-06
+Step 75; Loss: 0.000006
+5.7439565e-06
+Step 76; Loss: 0.000016
+1.5695508e-05
+Step 77; Loss: 0.000001
+6.733936e-07
+Step 78; Loss: 0.000011
+1.0582881e-05
+Step 79; Loss: 0.000001
+6.1916757e-07
+Step 80; Loss: 0.000011
+1.0519333e-05
+Step 81; Loss: 0.000001
+5.492854e-07
+Step 82; Loss: 0.000010
+1.04488945e-05
+Step 83; Loss: 0.000001
+5.149522e-07
+Step 84; Loss: 0.000010
+1.0410718e-05
+Step 85; Loss: 0.000000
+4.4555432e-07
+Step 86; Loss: 0.000010
+1.0312296e-05
+Step 87; Loss: 0.000000
+3.5267593e-07
+/home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From /home/davi/.local/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-12-26 19:52:47.007596: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-12-26 19:52:51.977544: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x2cadda0 executing computations on platform CUDA. Devices:
+2019-12-26 19:52:51.977587: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-12-26 19:52:51.979894: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2596990000 Hz
+2019-12-26 19:52:51.980249: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x310fb80 executing computations on platform Host. Devices:
+2019-12-26 19:52:51.980273: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-12-26 19:52:51.980795: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: ab06:00:00.0
+totalMemory: 11.17GiB freeMemory: 11.11GiB
+2019-12-26 19:52:51.980815: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-12-26 19:52:51.983096: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-12-26 19:52:51.983115: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-12-26 19:52:51.983123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-12-26 19:52:51.983200: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10869 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: ab06:00:00.0, compute capability: 3.7)
+2019-12-26 19:52:52.606116: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-12-26 19:52:52.606186: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-12-26 19:52:52.606199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-12-26 19:52:52.606205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-12-26 19:52:52.606263: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10869 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: ab06:00:00.0, compute capability: 3.7)
+Writing result to /home/davi/Documentos/train/
+Check if all projections have corresponding labels..
+
+
+
+Exibindo PA ***********
+[1.43989663 1.45857166 1.47724668 1.4959217  1.51459672 1.53327175
+ 1.55194677 1.57079633 1.58964588 1.60832091 1.62699593 1.64567095
+ 1.66434597 1.683021   1.70169602]
+
+
+
+
+
+
+
+
+Tamanho do parker: 
+(15, 1, 2048)
+
+WARNING: The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+If you depend on functionality not listed there, please file an issue.
+
+Start training model 0
+Leaving /home/davi/Documentos/phantoms/lowdose/binary0.proj.bin for test purposes..
+Printando os sets
+['/home/davi/Documentos/phantoms/lowdose/binary1.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary10.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary11.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary12.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary13.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary14.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary15.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary16.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary17.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary18.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary19.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary2.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary20.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary21.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary22.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary23.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary24.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary25.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary26.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary27.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary28.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary29.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary3.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary30.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary31.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary32.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary33.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary34.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary35.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary36.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary37.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary38.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary39.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary4.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary40.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary41.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary42.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary43.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary44.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary45.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary46.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary47.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary48.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary49.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary5.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary50.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary51.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary52.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary53.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary54.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary55.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary56.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary57.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary58.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary59.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary6.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary60.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary61.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary62.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary63.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary64.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary65.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary66.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary67.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary68.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary69.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary7.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary70.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary71.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary72.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary73.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary74.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary75.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary76.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary77.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary78.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary79.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary8.proj.bin', '/home/davi/Documentos/phantoms/lowdose/binary80.proj.bin']
+
+
+
+['/home/davi/Documentos/phantoms/lowdose/binary1.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary10.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary11.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary12.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary13.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary14.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary15.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary16.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary17.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary18.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary19.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary2.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary20.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary21.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary22.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary23.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary24.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary25.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary26.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary27.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary28.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary29.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary3.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary30.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary31.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary32.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary33.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary34.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary35.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary36.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary37.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary38.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary39.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary4.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary40.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary41.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary42.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary43.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary44.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary45.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary46.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary47.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary48.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary49.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary5.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary50.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary51.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary52.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary53.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary54.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary55.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary56.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary57.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary58.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary59.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary6.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary60.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary61.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary62.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary63.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary64.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary65.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary66.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary67.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary68.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary69.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary7.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary70.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary71.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary72.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary73.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary74.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary75.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary76.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary77.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary78.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary79.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary8.vol.bin', '/home/davi/Documentos/phantoms/lowdose/binary80.vol.bin']WARNING:tensorflow:From tfcone/pipeline.py:100: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/davi/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/davi/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING:tensorflow:From /home/davi/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/davi/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/davi/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:202: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/davi/Documentos/ConeDeepLearningCT2/tfcone/inout/dennerlein.py:16: WholeFileReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.map(tf.read_file)`.
+WARNING:tensorflow:From tfcone/pipeline.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
+WARNING:tensorflow:From tfcone/pipeline.py:332: Print (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2018-08-20.
+Instructions for updating:
+Use tf.print instead of tf.Print. Note that tf.print returns a no-output operator that directly prints the output. Outside of defuns or eager mode, this operator will not be executed unless it is directly specified in session.run or used as a control dependency for other operators. This is only a concern in graph mode. Below is an example of how to ensure tf.print executes in graph mode:
+```python
+    sess = tf.Session()
+    with sess.as_default():
+        tensor = tf.range(10)
+        print_op = tf.print(tensor)
+        with tf.control_dependencies([print_op]):
+          out = tf.add(tensor, tensor)
+        sess.run(out)
+    ```
+Additionally, to use tf.print in python 2.7, users must make sure to import
+the following:
+
+  `from __future__ import print_function`
+
+WARNING:tensorflow:From tfcone/pipeline.py:682: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+
+
+
+Amostra do test[50 50]
+
+
+
+
+['/home/davi/Documentos/phantoms/lowdose/binary0.proj.bin']
+
+
+
+['/home/davi/Documentos/phantoms/lowdose/binary0.vol.bin']
+[1.43989663 1.45857166 1.47724668 1.4959217  1.51459672 1.53327175
+ 1.55194677 1.57079633 1.58964588 1.60832091 1.62699593 1.64567095
+ 1.66434597 1.683021   1.70169602]
+
+
+
+Exibindo PA ***********
+[1.43989663 1.45857166 1.47724668 1.4959217  1.51459672 1.53327175
+ 1.55194677 1.57079633 1.58964588 1.60832091 1.62699593 1.64567095
+ 1.66434597 1.683021   1.70169602]
+
+
+
+
+
+
+
+
+Tamanho do parker: 
+(15, 1, 2048)
+
+
+
+kkkkkkkkkkkkkkkkkk 
+<tf.Variable 'Variable:0' shape=(79,) dtype=string_ref>
+Tensor("strided_slice_2:0", shape=(15, 1792, 2048), dtype=float32, device=/device:CPU:0)
+
+
+
+Dimensão do training: 
+Tensor("strided_slice_2:0", shape=(15, 1792, 2048), dtype=float32, device=/device:CPU:0)
+
+
+
+
+
+
+
+**** PRIMEIR VAMOS VERIFICAR O TAMNAHO DA MULTIPLICÇÃO: *****
+Tensor("LAReconstructor_1/LAReconstructor/cosine-weighting:0", shape=(15, 1792, 2048), dtype=float32)
+<tf.Variable 'LAReconstructor/LAReconstructor/parker-weights:0' shape=(15, 1, 2048) dtype=float32_ref>
+
+
+
+
+******** O TENSOR DO MSE:
+Tensor("mean_squared_error/value:0", shape=(), dtype=float32)
+Tensor("strided_slice_3:0", shape=(1, 1792, 2048), dtype=float32, device=/device:CPU:0)
+Tensor("LAReconstructor_1:0", shape=(1, 1792, 2048), dtype=float32)
+
+
+
+**** PRIMEIR VAMOS VERIFICAR O TAMNAHO DA MULTIPLICÇÃO: *****
+Tensor("LAReconstructor_2/LAReconstructor/cosine-weighting:0", shape=(15, 1792, 2048), dtype=float32)
+<tf.Variable 'LAReconstructor/LAReconstructor/parker-weights:0' shape=(15, 1, 2048) dtype=float32_ref>
+
+
+
+
+
+
+
+testandooooooo***************
+Tensor("TestLabelReader:0", shape=(1, 1792, 2048), dtype=float32, device=/device:CPU:0)
+None
+
+
+
+
+Step 1; Loss: 0.000006
+5.811279e-06
+
+
+
+Amostra do test[50 50]
+Step 2; Loss: 0.000006
+5.811082e-06
+
+
+
+Amostra do test[50 50]
+Step 3; Loss: 0.000006
+5.810904e-06
+
+
+
+Amostra do test[50 50]
+Step 4; Loss: 0.000006
+5.8106966e-06
+
+
+
+Amostra do test[50 50]
+Step 5; Loss: 0.000006
+5.8104697e-06
+
+
+
+Amostra do test[50 50]
+Step 6; Loss: 0.000006
+5.8102773e-06
+
+
+
+Amostra do test[50 50]
+Step 7; Loss: 0.000006
+5.8100777e-06
+
+
+
+Amostra do test[50 50]
+Step 8; Loss: 0.000006
+5.809601e-06
+
+
+
+Amostra do test[50 50]
+Step 9; Loss: 0.000006
+5.809394e-06
+
+
+
+Amostra do test[50 50]
+Step 10; Loss: 0.000006
+5.8092037e-06
+
+
+
+Amostra do test[50 50]
+Step 11; Loss: 0.000006
+5.809011e-06
+
+
+
+Amostra do test[50 50]
+Step 12; Loss: 0.000006
+5.8088203e-06
+
+
+
+Amostra do test[50 50]
+Step 13; Loss: 0.000006
+5.8086075e-06
+
+
+
+Amostra do test[50 50]
+Step 14; Loss: 0.000006
+5.8083997e-06
+
+
+
+Amostra do test[50 50]
+Step 15; Loss: 0.000006
+5.8082005e-06
+
+
+
+Amostra do test[50 50]
+Step 16; Loss: 0.000006
+5.8080063e-06
+
+
+
+Amostra do test[50 50]
+Step 17; Loss: 0.000006
+5.8078076e-06
+
+
+
+Amostra do test[50 50]
+Step 18; Loss: 0.000006
+5.8076116e-06
+
+
+
+Amostra do test[50 50]
+Step 19; Loss: 0.000006
+5.807433e-06
+
+
+
+Amostra do test[50 50]
+Step 20; Loss: 0.000006
+5.807019e-06
+
+
+
+Amostra do test[50 50]
+Step 21; Loss: 0.000006
+5.8068254e-06
+
+
+
+Amostra do test[50 50]
+Step 22; Loss: 0.000006
+5.806625e-06
+
+
+
+Amostra do test[50 50]
+Step 23; Loss: 0.000006
+5.8064284e-06
+
+
+
+Amostra do test[50 50]
+Step 24; Loss: 0.000006
+5.8062315e-06
+
+
+
+Amostra do test[50 50]
+Step 25; Loss: 0.000006
+5.806037e-06
+
+
+
+Amostra do test[50 50]
+Step 26; Loss: 0.000006
+5.8058313e-06
+
+
+
+Amostra do test[50 50]
+Step 27; Loss: 0.000006
+5.8056225e-06
+
+
+
+Amostra do test[50 50]
+Step 28; Loss: 0.000006
+5.8054243e-06
+
+
+
+Amostra do test[50 50]
+Step 29; Loss: 0.000006
+5.805229e-06
+
+
+
+Amostra do test[50 50]
+Step 30; Loss: 0.000006
+5.8050364e-06
+
+
+
+Amostra do test[50 50]
+Step 31; Loss: 0.000006
+5.804703e-06
+
+
+
+Amostra do test[50 50]
+Step 32; Loss: 0.000006
+5.804503e-06
+
+
+
+Amostra do test[50 50]
+Step 33; Loss: 0.000006
+5.8043042e-06
+
+
+
+Amostra do test[50 50]
+Step 34; Loss: 0.000006
+5.8041087e-06
+
+
+
+Amostra do test[50 50]
+Step 35; Loss: 0.000006
+5.803904e-06
+
+
+
+Amostra do test[50 50]
+Step 36; Loss: 0.000006
+5.8037067e-06
+
+
+
+Amostra do test[50 50]
+Step 37; Loss: 0.000006
+5.8035193e-06
+
+
+
+Amostra do test[50 50]
+Step 38; Loss: 0.000006
+5.8033324e-06
+
+
+
+Amostra do test[50 50]
+Step 39; Loss: 0.000006
+5.8031483e-06
+
+
+
+Amostra do test[50 50]
+Step 40; Loss: 0.000006
+5.8029555e-06
+
+
+
+Amostra do test[50 50]
+Step 41; Loss: 0.000006
+5.80285e-06
+
+
+
+Amostra do test[50 50]
+Step 42; Loss: 0.000006
+5.802653e-06
+
+
+
+Amostra do test[50 50]
+Step 43; Loss: 0.000006
+5.802459e-06
+
+
+
+Amostra do test[50 50]
+Step 44; Loss: 0.000006
+5.8022656e-06
+
+
+
+Amostra do test[50 50]
+Step 45; Loss: 0.000006
+5.8020637e-06
+
+
+
+Amostra do test[50 50]
+Step 46; Loss: 0.000006
+5.801857e-06
+
+
+
+Amostra do test[50 50]
+Step 47; Loss: 0.000006
+5.80166e-06
+
+
+
+Amostra do test[50 50]
+Step 48; Loss: 0.000006
+5.801466e-06
+
+
+
+Amostra do test[50 50]
+Step 49; Loss: 0.000006
+5.801274e-06
+
+
+
+Amostra do test[50 50]
+Step 50; Loss: 0.000006
+5.8010787e-06
+
+
+
+Amostra do test[50 50]
+Step 51; Loss: 0.000006
+5.8008786e-06
+
+
+
+Amostra do test[50 50]
+Step 52; Loss: 0.000006
+5.800681e-06
+
+
+
+Amostra do test[50 50]

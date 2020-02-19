@@ -1,0 +1,20 @@
+#pragma once
+
+#define MAX_PROJ_STACK_SIZE   1000
+#define BLOCKSIZE_X           16
+#define BLOCKSIZE_Y           8
+#define BLOCKSIZE_Z           8
+
+void cuda_init_backproject( float* geom,
+                            int U, int V, int N,
+                            int X, int Y, int Z,
+                            float ox, float oy, float oz,
+                            float sx, float sy, float sz,
+                            float displacement,
+                            float px, float py );
+
+void cuda_backproject( const float* proj, float* vol );
+
+void cuda_project( const float* vol, float* proj );
+
+

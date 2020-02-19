@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libwrite_dennerlein.so -o libwrite_dennerlein.so CMakeFiles/write_dennerlein.dir/write_dennerlein.cc.o  -L/home/davi/.local/lib/python3.6/site-packages/tensorflow -Wl,-rpath,/home/davi/.local/lib/python3.6/site-packages/tensorflow: -ltensorflow_framework 

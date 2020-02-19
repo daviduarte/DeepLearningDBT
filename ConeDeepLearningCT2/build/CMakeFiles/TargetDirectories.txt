@@ -1,0 +1,14 @@
+/home/davi/Documentos/ConeDeepLearningCT2/build/CMakeFiles/install/strip.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/CMakeFiles/install.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/CMakeFiles/install/local.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/CMakeFiles/list_install_components.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/CMakeFiles/edit_cache.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/CMakeFiles/rebuild_cache.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/user-ops/CMakeFiles/install/strip.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/user-ops/CMakeFiles/install/local.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/user-ops/CMakeFiles/write_dennerlein.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/user-ops/CMakeFiles/edit_cache.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/user-ops/CMakeFiles/backproject.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/user-ops/CMakeFiles/rebuild_cache.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/user-ops/CMakeFiles/list_install_components.dir
+/home/davi/Documentos/ConeDeepLearningCT2/build/user-ops/CMakeFiles/install.dir

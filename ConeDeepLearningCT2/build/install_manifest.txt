@@ -1,0 +1,16 @@
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/util/types.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/util/numerical.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/util/__init__.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/pipeline.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/ct.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/inout/dataset_format.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/inout/png.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/inout/dennerlein.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/inout/projtable.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/inout/__init__.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/phantoms_to_binary.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/algo/ct.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/algo/__init__.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/tfcone/__init__.py
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/lib/libbackproject.so
+/home/davi/Documentos/ConeDeepLearningCT2/build/[...]/lib/libwrite_dennerlein.so
